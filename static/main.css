@@ -29,6 +29,10 @@ body {
 .icon {
   width: 34px;
 }
+.reference_image {
+  width: 600px;
+  margin-bottom: 20px;
+}
 h3 {
   font-size: 32px;
   line-height: 40px;
