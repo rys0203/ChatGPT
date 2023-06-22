@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='function_calling.png') }}"
+  />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <a href="/">Home</a>
+  <h3>Chat Completions API</h3>
+  <img src="{{ url_for('static', filename='function_calling.png') }}" class="reference_image"/>
+  <form action="/function_calling" method="post">
+    <input type="submit" value="Generate Function Response" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
